@@ -1,4 +1,5 @@
 import '../styles/SneakerItem.css'
+import CustomerReview from './CustomerReview';
 
 function SneakerItem({nom, marque, prix, style, esthetique, confort})
 {
@@ -9,6 +10,10 @@ function SneakerItem({nom, marque, prix, style, esthetique, confort})
                 <p className="sneaker-brand">{marque}</p>
                 <p className="sneaker-price">{prix} €</p>
                 <p className="sneaker-style">{style}</p>
+                <div className="sneaker-review">
+                    <CustomerReview reviewType='esthétisme' scaleValue={esthetique} />
+                    <CustomerReview reviewType='confort' scaleValue={confort} />
+                </div>
             </div>
         </a>
     );
