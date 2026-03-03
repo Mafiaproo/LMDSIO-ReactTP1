@@ -12,6 +12,7 @@ function ShoppingList()
                     <SneakerItem 
                         key={sneaker.id}
                         nom={sneaker.nom}
+                        image={sneaker.image}
                         marque={sneaker.marque}
                         prix={sneaker.prix}
                         style={sneaker.style}

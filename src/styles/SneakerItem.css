@@ -13,6 +13,22 @@
 
 }
 
+.card-content
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(245, 248, 248);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.sneaker-image {
+    width: 150px;
+    border-radius: 10px;
+}
+
 /* Selectionne Le parent 'a' de sneaker-item */
 a:has(.sneaker-item)
 {
