@@ -1,12 +1,13 @@
 .sneaker-item {
   position: relative;  /* Nécessaire pour le positionnement du badge */
+  width: 100%;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;  /* Réduit de 20px à 15px */
   transition: all 0.3s ease;
   border: 1px solid #e5e7eb;
-  width: 100%;
+
   height: fit-content;
   box-sizing: border-box;
   text-decoration: none;
@@ -68,6 +69,7 @@
   border-top: 1px solid #e5e7eb;
   padding-top: 12px;  
   margin-top: 12px;  
+  width: 100%;
 }
 .sneaker-review > div {
   margin: 6px 0;  
@@ -89,7 +91,7 @@
 }
 
 .sneaker-item.best-seller {
-  border: 2px solid gold;
+  
   box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
   transform: translateY(-2px);
 }
