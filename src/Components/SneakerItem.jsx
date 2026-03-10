@@ -3,6 +3,16 @@ import CustomerReview from './CustomerReview';
 
 function SneakerItem({nom, image, marque, prix, style, esthetique, confort, bestSeller=false})
 {
+    const handleClickAvis = () => {
+        const esthetismeText = formatReview('esthétisme', esthetique);
+        const confortText = formatReview('confort', confort);
+        alert(`Avis pour ${nom}:\n${esthetismeText}\n${confortText}`);
+    };
+    const formatReview = (reviewType, scaleValue) => {
+        const scaleType = reviewType === 'confort' ? '😌' : '💖';
+        const icons = scaleType.repeat(scaleValue);
+        return `${reviewType}: ${icons} (${scaleValue}/5)`;
+    };
     return (
         <a href="/">
             <div className={`sneaker-item ${bestSeller ? 'best-seller' : ''}`}>
@@ -14,10 +24,8 @@ function SneakerItem({nom, image, marque, prix, style, esthetique, confort, best
                     <p className="sneaker-brand">{marque}</p>
                     <p className="sneaker-price">{prix} €</p>
                     <p className="sneaker-style">{style}</p>
-                    <div className="sneaker-review">
-                        <CustomerReview reviewType='esthétisme' scaleValue={esthetique} />
-                        <CustomerReview reviewType='confort' scaleValue={confort} />
-                    </div>
+                    <br />
+                    <button className='sneaker-review-btn' onClick={handleClickAvis}><strong>Voir les avis</strong></button>
                 </div>
             </div>
         </a>
