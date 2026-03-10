@@ -1,0 +1,47 @@
+.sneaker-item {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    color: black;
+
+}
+
+.card-content
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(245, 248, 248);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.sneaker-image {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Selectionne Le parent 'a' de sneaker-item */
+a:has(.sneaker-item)
+{
+    text-decoration: none;
+}
+
+.sneaker-item:hover {
+    scale: 1.1;
+    background: rgb(247, 247, 247);
+    rotate: 2deg;
+}
+
+.sneaker-item:active {
+    background: rgb(223, 223, 223);
+    scale: 1;
+}

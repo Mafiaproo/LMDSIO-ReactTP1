@@ -19,7 +19,8 @@ export const sneakersList = [
     style: 'Casual',
     esthetique: 4,
     confort: 5,
-    image: AirMax
+    image: AirMax,
+    bestSeller: true
   },
   {
     id: "2",
@@ -29,7 +30,8 @@ export const sneakersList = [
     style: "Training",
     esthetique: 3,
     confort: 4,
-    image: Force7
+    image: Force7,
+    bestSeller: false
   },
   {
     id: "3",
@@ -39,7 +41,8 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 5,
     confort: 3,
-    image: Jordan4
+    image: Jordan4,
+    bestSeller: true
   },
   {
     id: "4",
@@ -49,7 +52,8 @@ export const sneakersList = [
     style: "Casual",
     esthetique: 4,
     confort: 4,
-    image: AllStars
+    image: AllStars,
+    bestSeller: false
   },
   {
     id: "5",
@@ -59,7 +63,8 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 4,
     confort: 1,
-    image: Chuck
+    image: Chuck,
+    bestSeller: false
   },
   {
     id: "6",
@@ -69,7 +74,8 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 3,
     confort: 1,
-    image: RunStar
+    image: RunStar,
+    bestSeller: true
   },
   {
     id: "7",
@@ -79,7 +85,8 @@ export const sneakersList = [
     style: "Mode",
     esthetique: 5,
     confort: 4,
-    image: Rouge
+    image: Rouge,
+    bestSeller: false
   },
   {
     id: "8",
@@ -89,7 +96,8 @@ export const sneakersList = [
     style: "Urbain",
     esthetique: 4,
     confort: 4,
-    image: BasketPatch
+    image: BasketPatch,
+    bestSeller: false
   },
   {
     id: "9",
@@ -99,7 +107,8 @@ export const sneakersList = [
     style: "Mode",
     esthetique: 5,
     confort: 2,
-    image: UrbanStreet
+    image: UrbanStreet,
+    bestSeller: false
   },
   {
     id: "10",
@@ -109,6 +118,7 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 3,
     confort: 5,
-    image: Airforce1
+    image: Airforce1,
+    bestSeller: false
   }
 ];
