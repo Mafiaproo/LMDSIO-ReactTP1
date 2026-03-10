@@ -5,11 +5,10 @@ function SneakerItem({nom, image, marque, prix, style, esthetique, confort, best
 {
     return (
         <a href="/">
-            <div className="sneaker-item">
+            <div className={`sneaker-item ${bestSeller ? 'best-seller' : ''}`}>
+                <br />
                 <h3>{nom}</h3>
-                <div className={`sneaker-item ${bestSeller ? 'best-seller' : ''}`}>
-                    {bestSeller && <span className="best-seller-badge">Top vente</span>}
-                </div>
+                {bestSeller && <span className="best-seller-badge">Top vente</span>}
                 <img className='sneaker-image' alt='' src={image} />
                 <div className="card-content">
                     <p className="sneaker-brand">{marque}</p>
