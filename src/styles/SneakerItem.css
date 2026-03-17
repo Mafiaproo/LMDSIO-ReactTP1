@@ -22,18 +22,35 @@
 /* Style pour les images de sneakers */
 .sneaker-image {
   width: 80%;  /* Réduit de 100% à 80% */
-  height: 140px;  /* Réduit de 160px à 140px */
+  height: 160px;  /* Réduit de 160px à 140px */
   border-radius: 8px;
   margin: 0 auto 12px auto;  /* Centre l'image */
   object-fit: cover;  /* Pour que l'image garde ses proportions */
   display: block;
 }
 
-.sneaker-item h3 {
-  margin: 0 0 8px 0;  
-  font-size: 1.3rem;  
+.sneaker-label {
+  display: flex;
+  width: fit-content;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px 2px 10px;
+  background-color: rgb(253, 253, 253);
+  border: 3px solid rgb(248, 248, 248);
+  border-radius: 8px;
+  justify-self: center;
+  font-size: 1.0rem;  
   color: #1f2937;
-  font-weight: 600;
+  font-weight: 400;
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.0);
+  margin-bottom: 20px;
+  transition: all 0.2s;
+}
+
+.sneaker-item:hover > .sneaker-label {
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
 }
 
 .sneaker-item p {
@@ -62,6 +79,27 @@
   font-size: 0.85rem;
   font-weight: 500;
   margin: 6px 0;  
+}
+
+.card-content
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: rgb(253, 253, 253);
+    border-radius: 5px;
+    font-size: 0.9em;
+    justify-self: center;
+    padding: 6px 10px;
+    transition: all 0.2s;
+}
+
+.sneaker-item:hover > .card-content {
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
 }
 
 /* Section des avis */
@@ -103,10 +141,15 @@
 
 .sneaker-review-btn {
   height: 30px;
-  width: 50%;
+  width: 150px;
   border: 3px solid rgb(238, 235, 57);
   background-color: rgb(248, 245, 60);
   border-radius: 5px;
-  
+}
 
+.avis-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
 }
